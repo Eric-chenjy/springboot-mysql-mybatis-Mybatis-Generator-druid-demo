@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://127.0.0.1:3306/day01?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+   username: root
+   password: ......
+   # 使用druid数据源
+   type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  type-aliases-package: com.example.duowei.mapper
+  mapper-locations: classpath:mapper/*.xml
